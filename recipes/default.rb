@@ -7,7 +7,7 @@
 # Licened under BSD Licence
 #
 
-pkgs = node['php_fpm']['package']
+pkgs = [ node['php_fpm']['package'] ]
 pkgs.each do |pkg|
     package pkg do
         action :upgrade

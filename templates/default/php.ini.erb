@@ -1,368 +1,368 @@
-; Automatically created with chef for <%= node['name'] %> 
+; Automatically created with chef for <%= node['fqdn'] %>
 ; DO NOT EDIT
 
 [php]
-allow_call_time_pass_reference = #{node['php_fpm']['allow_call_time_pass_reference']}
-allow_url_fopen = #{node['php_fpm']['allow_url_fopen']}
-allow_url_include = #{node['php_fpm']['allow_url_include']}
-always_populate_raw_post_data = #{node['php_fpm']['always_populate_raw_post_data']}
-arg_separator.input = #{node['php_fpm']['arg_separator']['input']}
-arg_separator.output = #{node['php_fpm']['arg_separator']['output']}
-asp_tags = #{node['php_fpm']['asp_tag']}
-auto_detect_line_endings = #{node['php_fpm']['auto_detect_line_endings']}
-auto_globals_jit = #{node['php_fpm']['auto_globals_jit']}
-auto_append_file = #{node['php_fpm']['auto_append_file']}
-auto_prepend_file = #{node['php_fpm']['auto_prepend_file']}
-browscap = #{node['php_fpm']['browscap']}
-default_charset = #{node['php_fpm']['default_charset']}
-default_mimetype = #{node['php_fpm']['default_mimetype']}
-default_socket_timeout = #{node['php_fpm']['default_socket_timeout']}
-define_syslog_variables = #{node['php_fpm']['define_syslog_variables']}
-disable_classes = #{node['php_fpm']['disable_classes']}
-disable_functions = #{node['php_fpm']['disable_functions']}
-display_errors = #{node['php_fpm']['display_errors']}
-display_startup_errors = #{node['php_fpm']['display_startup_errors']}
-docref_ext = #{node['php_fpm']['docref_ext']}
-docref_root = #{node['php_fpm']['docref_root']}
-doc_root = #{node['php_fpm']['doc_root']}
-enable_dl = #{node['php_fpm']['enable_dl']}
-engine = #{node['php_fpm']['engine']}
-error_append_string = #{node['php_fpm']['error_append_string']}
-error_log = #{node['php_fpm']['error_log']}
-error_prepend_string = #{node['php_fpm']['error_prepend_string']}
-error_reporting = #{node['php_fpm']['error_reporting']}
-expose_php = #{node['php_fpm']['expose_php']}
-extension_dir = #{node['php_fpm']['extension_dir']}
-file_uploads = #{node['php_fpm']['file_uploads']}
-from = #{node['php_fpm']['from']}
-html_errors = #{node['php_fpm']['html_errors']}
-ignore_repeated_errors = #{node['php_fpm']['ignore_repeated_errors']}
-ignore_repeated_source = #{node['php_fpm']['ignore_repeated_source']}
-ignore_user_abort = #{node['php_fpm']['ignore_user_abort']}
-implicit_flush = #{node['php_fpm']['implicit_flush']}
-include_path = #{node['php_fpm']['include_path']}
-log_errors = #{node['php_fpm']['log_errors']}
-log_errors_max_len = #{node['php_fpm']['log_errors_max_len']}
-magic_quotes_gpc = #{node['php_fpm']['magic_quotes_gpc']}
-magic_quotes_runtime = #{node['php_fpm']['magic_quotes_runtime']}
-magic_quotes_sybase = #{node['php_fpm']['magic_quotes_sybase']}
-max_execution_time = #{node['php_fpm']['max_execution_time']}
-max_file_uploads = #{node['php_fpm']['max_file_uploads']}
-max_input_time = #{node['php_fpm']['max_input_time']}
-max_input_nesting_level = #{node['php_fpm']['max_input_level_nesting']}
-memory_limit = #{node['php_fpm']['memory_limit']}
-open_basedir = #{node['php_fpm']['open_base_dir']}
-output_buffering = #{node['php_fpm']['output_buffering']}
-output_handler = #{node['php_fpm']['output_handler']}
-post_max_size = #{node['php_fpm']['post_max_size']}
-precision = #{node['php_fpm']['precision']}
-realpath_cache_size = #{node['php_fpm']['realpath_cache_size']}
-realpath_cache_ttl = #{node['php_fpm']['realpath_cache_ttl']}
-register_argc_argv = #{node['php_fpm']['register_argc_argv']}
-register_globals = #{node['php_fpm']['register_globals']}
-register_long_arrays = #{node['php_fpm']['register_long_arrays']}
-report_memleaks = #{node['php_fpm']['report_memleaks']}
-report_zend_debug = #{node['php_fpm']['report_zend_debug']}
-request_order = #{node['php_fpm']['request_order']}
-safe_mode = #{node['php_fpm']['safe_mode']}
-safe_mode_allowed_env_vars = #{node['php_fpm']['safe_mode_allowed_env_vars']}
-safe_mode_exec_dir = #{node['php_fpm']['safe_mode_exec_dir']}
-safe_mode_gid = #{node['php_fpm']['safe_mode_gid']}
-safe_mode_include_dir = #{node['php_fpm']['safe_mode_include_dir']}
-safe_mode_protected_env_vars = #{node['php_fpm']['safe_mode_protected_env_vars']}
-sendmail_path = #{node['php_fpm']['sendmail_path']}
-serialize_precision = #{node['php_fpm']['serialize_precision']}
-short_open_tag = #{node['php_fpm']['short_open_tag']}
-SMTP = #{node['php_fpm']['smtp']}
-smtp_port = #{node['php_fpm']['smtp_port']}
-track_errors = #{node['php_fpm']['track_errors']}
-unserialize_callback_func = #{node['php_fpm']['unserialize_callback_func']}
-upload_max_filesize = #{node['php_fpm']['upload_max_filesize']}
-upload_tmp_dir = #{node['php_fpm']['upload_tmp_dir']}
-user_dir = #{node['php_fpm']['user_dir']}
-user_agent = #{node['php_fpm']['user_agent']}
-variables_order = #{node['php_fpm']['variables_order']}
-xmlrpc_errors = #{node['php_fpm']['xmlrpc_errors']}
-xmlrpc_error_number = #{node['php_fpm']['xmlrpc_error_number']}
-y2k_compliance = #{node['php_fpm']['y2k_compliance']}
+allow_call_time_pass_reference = <%= node['php_fpm']['allow_call_time_pass_reference'] %>
+allow_url_fopen = <%= node['php_fpm']['allow_url_fopen'] %>
+allow_url_include = <%= node['php_fpm']['allow_url_include'] %>
+always_populate_raw_post_data = <%= node['php_fpm']['always_populate_raw_post_data'] %>
+arg_separator.input = <%= node['php_fpm']['arg_separator']['input'] %>
+arg_separator.output = <%= node['php_fpm']['arg_separator']['output'] %>
+asp_tags = <%= node['php_fpm']['asp_tag'] %>
+auto_detect_line_endings = <%= node['php_fpm']['auto_detect_line_endings'] %>
+auto_globals_jit = <%= node['php_fpm']['auto_globals_jit'] %>
+auto_append_file = <%= node['php_fpm']['auto_append_file'] %>
+auto_prepend_file = <%= node['php_fpm']['auto_prepend_file'] %>
+browscap = <%= node['php_fpm']['browscap'] %>
+default_charset = <%= node['php_fpm']['default_charset'] %>
+default_mimetype = <%= node['php_fpm']['default_mimetype'] %>
+default_socket_timeout = <%= node['php_fpm']['default_socket_timeout'] %>
+define_syslog_variables = <%= node['php_fpm']['define_syslog_variables'] %>
+disable_classes = <%= node['php_fpm']['disable_classes'] %>
+disable_functions = <%= node['php_fpm']['disable_functions'] %>
+display_errors = <%= node['php_fpm']['display_errors'] %>
+display_startup_errors = <%= node['php_fpm']['display_startup_errors'] %>
+docref_ext = <%= node['php_fpm']['docref_ext'] %>
+docref_root = <%= node['php_fpm']['docref_root'] %>
+doc_root = <%= node['php_fpm']['doc_root'] %>
+enable_dl = <%= node['php_fpm']['enable_dl'] %>
+engine = <%= node['php_fpm']['engine'] %>
+error_append_string = <%= node['php_fpm']['error_append_string'] %>
+error_log = <%= node['php_fpm']['error_log'] %>
+error_prepend_string = <%= node['php_fpm']['error_prepend_string'] %>
+error_reporting = <%= node['php_fpm']['error_reporting'] %>
+expose_php = <%= node['php_fpm']['expose_php'] %>
+extension_dir = <%= node['php_fpm']['extension_dir'] %>
+file_uploads = <%= node['php_fpm']['file_uploads'] %>
+from = <%= node['php_fpm']['from'] %>
+html_errors = <%= node['php_fpm']['html_errors'] %>
+ignore_repeated_errors = <%= node['php_fpm']['ignore_repeated_errors'] %>
+ignore_repeated_source = <%= node['php_fpm']['ignore_repeated_source'] %>
+ignore_user_abort = <%= node['php_fpm']['ignore_user_abort'] %>
+implicit_flush = <%= node['php_fpm']['implicit_flush'] %>
+include_path = <%= node['php_fpm']['include_path'] %>
+log_errors = <%= node['php_fpm']['log_errors'] %>
+log_errors_max_len = <%= node['php_fpm']['log_errors_max_len'] %>
+magic_quotes_gpc = <%= node['php_fpm']['magic_quotes_gpc'] %>
+magic_quotes_runtime = <%= node['php_fpm']['magic_quotes_runtime'] %>
+magic_quotes_sybase = <%= node['php_fpm']['magic_quotes_sybase'] %>
+max_execution_time = <%= node['php_fpm']['max_execution_time'] %>
+max_file_uploads = <%= node['php_fpm']['max_file_uploads'] %>
+max_input_time = <%= node['php_fpm']['max_input_time'] %>
+max_input_nesting_level = <%= node['php_fpm']['max_input_level_nesting'] %>
+memory_limit = <%= node['php_fpm']['memory_limit'] %>
+open_basedir = <%= node['php_fpm']['open_base_dir'] %>
+output_buffering = <%= node['php_fpm']['output_buffering'] %>
+output_handler = <%= node['php_fpm']['output_handler'] %>
+post_max_size = <%= node['php_fpm']['post_max_size'] %>
+precision = <%= node['php_fpm']['precision'] %>
+realpath_cache_size = <%= node['php_fpm']['realpath_cache_size'] %>
+realpath_cache_ttl = <%= node['php_fpm']['realpath_cache_ttl'] %>
+register_argc_argv = <%= node['php_fpm']['register_argc_argv'] %>
+register_globals = <%= node['php_fpm']['register_globals'] %>
+register_long_arrays = <%= node['php_fpm']['register_long_arrays'] %>
+report_memleaks = <%= node['php_fpm']['report_memleaks'] %>
+report_zend_debug = <%= node['php_fpm']['report_zend_debug'] %>
+request_order = <%= node['php_fpm']['request_order'] %>
+safe_mode = <%= node['php_fpm']['safe_mode'] %>
+safe_mode_allowed_env_vars = <%= node['php_fpm']['safe_mode_allowed_env_vars'] %>
+safe_mode_exec_dir = <%= node['php_fpm']['safe_mode_exec_dir'] %>
+safe_mode_gid = <%= node['php_fpm']['safe_mode_gid'] %>
+safe_mode_include_dir = <%= node['php_fpm']['safe_mode_include_dir'] %>
+safe_mode_protected_env_vars = <%= node['php_fpm']['safe_mode_protected_env_vars'] %>
+sendmail_path = <%= node['php_fpm']['sendmail_path'] %>
+serialize_precision = <%= node['php_fpm']['serialize_precision'] %>
+short_open_tag = <%= node['php_fpm']['short_open_tag'] %>
+SMTP = <%= node['php_fpm']['smtp'] %>
+smtp_port = <%= node['php_fpm']['smtp_port'] %>
+track_errors = <%= node['php_fpm']['track_errors'] %>
+unserialize_callback_func = <%= node['php_fpm']['unserialize_callback_func'] %>
+upload_max_filesize = <%= node['php_fpm']['upload_max_filesize'] %>
+upload_tmp_dir = <%= node['php_fpm']['upload_tmp_dir'] %>
+user_dir = <%= node['php_fpm']['user_dir'] %>
+user_agent = <%= node['php_fpm']['user_agent'] %>
+variables_order = <%= node['php_fpm']['variables_order'] %>
+xmlrpc_errors = <%= node['php_fpm']['xmlrpc_errors'] %>
+xmlrpc_error_number = <%= node['php_fpm']['xmlrpc_error_number'] %>
+y2k_compliance = <%= node['php_fpm']['y2k_compliance'] %>
 
 [assert]
-assert.active = #{node['php_fpm']['assert']['active']}
-assert.bail = #{node['php_fpm']['assert']['bail']}
-assert.callback = #{node['php_fpm']['assert']['callback']}
-assert.quiet_eval = #{node['php_fpm']['assert']['quiet_eval']}
-assert.warning = #{node['php_fpm']['assert']['warning']}
+assert.active = <%= node['php_fpm']['assert']['active'] %>
+assert.bail = <%= node['php_fpm']['assert']['bail'] %>
+assert.callback = <%= node['php_fpm']['assert']['callback'] %>
+assert.quiet_eval = <%= node['php_fpm']['assert']['quiet_eval'] %>
+assert.warning = <%= node['php_fpm']['assert']['warning'] %>
 
 [bcmath]
-bcmath.scale = #{node['php_fpm']['bcmath']['scale']}
+bcmath.scale = <%= node['php_fpm']['bcmath']['scale'] %>
 
 [birdstep]
-birdstep.max_links = #{node['php_fpm']['birdstep']['max_links']}
+birdstep.max_links = <%= node['php_fpm']['birdstep']['max_links'] %>
 
 [cgi]
-cgi.fix_pathinfo = #{node['php_fpm']['cgi']['fix_pathinfo']}
-cgi.force_redirect = #{node['php_fpm']['cgi']['force_redirect']}
-cgi.nph = #{node['php_fpm']['cgi']['nph']}
-cgi.redirect_status_env = #{node['php_fpm']['cgi']['redirect_status_env']}
-cgi.rfc2616_headers = #{node['php_fpm']['cgi']['rc2616_headers']}
+cgi.fix_pathinfo = <%= node['php_fpm']['cgi']['fix_pathinfo'] %>
+cgi.force_redirect = <%= node['php_fpm']['cgi']['force_redirect'] %>
+cgi.nph = <%= node['php_fpm']['cgi']['nph'] %>
+cgi.redirect_status_env = <%= node['php_fpm']['cgi']['redirect_status_env'] %>
+cgi.rfc2616_headers = <%= node['php_fpm']['cgi']['rc2616_headers'] %>
 
 [com]
-com.allow_dcom = #{node['php_fpm']['com']['allow_dcom']}
-com.autoregister_casesensitive = #{node['php_fpm']['com']['autoregister_casesensitive']}
-com.autoregister_typelib = #{node['php_fpm']['com']['autoregister_typelib']}
-com.autoregister_verbose = #{node['php_fpm']['com']['autoregister_verbose']}
-com.code_page= #{node['php_fpm']['com']['code_page']}
-com.typelib_file = #{node['php_fpm']['com']['typelib_file']}
+com.allow_dcom = <%= node['php_fpm']['com']['allow_dcom'] %>
+com.autoregister_casesensitive = <%= node['php_fpm']['com']['autoregister_casesensitive'] %>
+com.autoregister_typelib = <%= node['php_fpm']['com']['autoregister_typelib'] %>
+com.autoregister_verbose = <%= node['php_fpm']['com']['autoregister_verbose'] %>
+com.code_page= <%= node['php_fpm']['com']['code_page'] %>
+com.typelib_file = <%= node['php_fpm']['com']['typelib_file'] %>
 
 [date]
-date.default_latitude = #{node['php_fpm']['date']['default_latitude']}
-date.default_longitude = #{node['php_fpm']['date']['default_longitude']}
-date.sunrise_zenith = #{node['php_fpm']['date']['sunrise_zenith']}
-date.sunset_zenith = #{node['php_fpm']['date']['sunset_zenith']}
-date.timezone = #{node['php_fpm']['date']['timezone']}
+date.default_latitude = <%= node['php_fpm']['date']['default_latitude'] %>
+date.default_longitude = <%= node['php_fpm']['date']['default_longitude'] %>
+date.sunrise_zenith = <%= node['php_fpm']['date']['sunrise_zenith'] %>
+date.sunset_zenith = <%= node['php_fpm']['date']['sunset_zenith'] %>
+date.timezone = <%= node['php_fpm']['date']['timezone'] %>
 
 [dba]
-dba.default_handler = #{node['php_fpm']['dba']['default_handler']}
+dba.default_handler = <%= node['php_fpm']['dba']['default_handler'] %>
 
 [exif]
-exif.decode_jis_intel = #{node['php_fpm']['exif']['decode_jis_intel']}
-exif.decode_jis_motorola = #{node['php_fpm']['exif']['decode_jis_motorola']}
-exif.decode_unicode_intel = #{node['php_fpm']['exif']['decode_unicode_intel']}
-exif.decode_unicode_motorola = #{node['php_fpm']['exif']['decode_unicode_motorola']}
-exif.encode_jis = #{node['php_fpm']['exif']['encode_jis']}
-exif.encode_unicode = #{node['php_fpm']['exif']['encode_unicode']}
+exif.decode_jis_intel = <%= node['php_fpm']['exif']['decode_jis_intel'] %>
+exif.decode_jis_motorola = <%= node['php_fpm']['exif']['decode_jis_motorola'] %>
+exif.decode_unicode_intel = <%= node['php_fpm']['exif']['decode_unicode_intel'] %>
+exif.decode_unicode_motorola = <%= node['php_fpm']['exif']['decode_unicode_motorola'] %>
+exif.encode_jis = <%= node['php_fpm']['exif']['encode_jis'] %>
+exif.encode_unicode = <%= node['php_fpm']['exif']['encode_unicode'] %>
 
 [fastcgi]
-fastcgi.impersonate = #{node['php_fpm']['fastcgi']['inpersonate']}
-fastcgi.logging = #{node['php_fpm']['fastcgi']['logging']}
+fastcgi.impersonate = <%= node['php_fpm']['fastcgi']['inpersonate'] %>
+fastcgi.logging = <%= node['php_fpm']['fastcgi']['logging'] %>
 
 [filter]
-filter.default = #{node['php_fpm']['filter']['default']}
-filter.default_flags = #{node['php_fpm']['filter']['default_flags']}
+filter.default = <%= node['php_fpm']['filter']['default'] %>
+filter.default_flags = <%= node['php_fpm']['filter']['default_flags'] %>
 
 [gd]
-gd.jpeg_ignore_warning = #{node['php_fpm']['gd']['jpeg_ignore_warning']}
+gd.jpeg_ignore_warning = <%= node['php_fpm']['gd']['jpeg_ignore_warning'] %>
 
 [highlight]
-highlight.bg = #{node['php_fpm']['highlight']['bg']}
-highlight.comment = #{node['php_fpm']['highlight']['comment']}
-highlight.default = #{node['php_fpm']['highlight']['default']}
-highlight.html = #{node['php_fpm']['highlight']['html']}
-highlight.keyword = #{node['php_fpm']['highlight']['keyword']}
-highlight.string = #{node['php_fpm']['highlight']['string']}
+highlight.bg = <%= node['php_fpm']['highlight']['bg'] %>
+highlight.comment = <%= node['php_fpm']['highlight']['comment'] %>
+highlight.default = <%= node['php_fpm']['highlight']['default'] %>
+highlight.html = <%= node['php_fpm']['highlight']['html'] %>
+highlight.keyword = <%= node['php_fpm']['highlight']['keyword'] %>
+highlight.string = <%= node['php_fpm']['highlight']['string'] %>
 
 [ibase]
-ibase.allow_persistent = #{node['php_fpm']['ibase']['allow_persistent']}
-ibase.dateformat = #{node['php_fpm']['ibase']['dateformat']}
-ibase.default_charset = #{node['php_fpm']['ibase']['default_charset']}
-ibase.default_db = #{node['php_fpm']['ibase']['default_db']}
-ibase.default_password = #{node['php_fpm']['ibase']['default_password']}
-ibase.default_user = #{node['php_fpm']['ibase']['default_user']}
-ibase.max_links = #{node['php_fpm']['ibase']['max_links']}
-ibase.max_persistent = #{node['php_fpm']['ibase']['max_persistent']}
-ibase.timeformat = #{node['php_fpm']['ibase']['timeformat']}
-ibase.timestampformat = #{node['php_fpm']['ibase']['timestampformat']}
+ibase.allow_persistent = <%= node['php_fpm']['ibase']['allow_persistent'] %>
+ibase.dateformat = <%= node['php_fpm']['ibase']['dateformat'] %>
+ibase.default_charset = <%= node['php_fpm']['ibase']['default_charset'] %>
+ibase.default_db = <%= node['php_fpm']['ibase']['default_db'] %>
+ibase.default_password = <%= node['php_fpm']['ibase']['default_password'] %>
+ibase.default_user = <%= node['php_fpm']['ibase']['default_user'] %>
+ibase.max_links = <%= node['php_fpm']['ibase']['max_links'] %>
+ibase.max_persistent = <%= node['php_fpm']['ibase']['max_persistent'] %>
+ibase.timeformat = <%= node['php_fpm']['ibase']['timeformat'] %>
+ibase.timestampformat = <%= node['php_fpm']['ibase']['timestampformat'] %>
 
 [iconv]
-iconv.input_encoding = #{node['php_fpm']['iconv']['input_encoding']}
-iconv.internal_encoding = #{node['php_fpm']['iconv']['internal_encoding']}
-iconv.output_encoding = #{node['php_fpm']['iconv']['output_encoding']}
+iconv.input_encoding = <%= node['php_fpm']['iconv']['input_encoding'] %>
+iconv.internal_encoding = <%= node['php_fpm']['iconv']['internal_encoding'] %>
+iconv.output_encoding = <%= node['php_fpm']['iconv']['output_encoding'] %>
 
 [intl]
-intl.default_locale = #{node['php_fpm']['intl']['default_locale']}
-intl.error_level = #{node['php_fpm']['intl']['error_level']}
+intl.default_locale = <%= node['php_fpm']['intl']['default_locale'] %>
+intl.error_level = <%= node['php_fpm']['intl']['error_level'] %>
 
 [ldap]
-ldap.max_links = #{node['php_fpm']['ldap']['max_links']}
+ldap.max_links = <%= node['php_fpm']['ldap']['max_links'] %>
 
 [mail]
-mail.add_x_header = #{node['php_fpm']['mail']['add_x_header']}
-mail.force_extra_parameters = #{node['php_fpm']['mail']['force_extra_parameters']}
-mail.log = #{node['php_fpm']['mail']['log']}
+mail.add_x_header = <%= node['php_fpm']['mail']['add_x_header'] %>
+mail.force_extra_parameters = <%= node['php_fpm']['mail']['force_extra_parameters'] %>
+mail.log = <%= node['php_fpm']['mail']['log'] %>
 
 [mbstring]
-mbstring.detect_order = #{node['php_fpm']['mbstring']['detect_order']}
-mbstring.encoding_translation = #{node['php_fpm']['mbstring']['encoding_translation']}
-mbstring.func_overload = #{node['php_fpm']['mbstring']['func_overload']}
-mbstring.http_input = #{node['php_fpm']['mbstring']['http_input']}
-mbstring.http_output = #{node['php_fpm']['mbstring']['http_output']}
-mbstring.http_output_conv_mimetype = #{node['php_fpm']['mbstring']['http_output_conv_mimetype']}
-mbstring.internal_encoding = #{node['php_fpm']['mbstring']['internal_encoding']}
-mbstring.language = #{node['php_fpm']['mbstring']['language']}
-mbstring.script_encoding= #{node['php_fpm']['mbstring']['script_encoding']}
-mbstring.strict_detection = #{node['php_fpm']['mbstring']['strict_detection']}
-mbstring.substitute_character = #{node['php_fpm']['mbstring']['substitute_character']}
+mbstring.detect_order = <%= node['php_fpm']['mbstring']['detect_order'] %>
+mbstring.encoding_translation = <%= node['php_fpm']['mbstring']['encoding_translation'] %>
+mbstring.func_overload = <%= node['php_fpm']['mbstring']['func_overload'] %>
+mbstring.http_input = <%= node['php_fpm']['mbstring']['http_input'] %>
+mbstring.http_output = <%= node['php_fpm']['mbstring']['http_output'] %>
+mbstring.http_output_conv_mimetype = <%= node['php_fpm']['mbstring']['http_output_conv_mimetype'] %>
+mbstring.internal_encoding = <%= node['php_fpm']['mbstring']['internal_encoding'] %>
+mbstring.language = <%= node['php_fpm']['mbstring']['language'] %>
+mbstring.script_encoding= <%= node['php_fpm']['mbstring']['script_encoding'] %>
+mbstring.strict_detection = <%= node['php_fpm']['mbstring']['strict_detection'] %>
+mbstring.substitute_character = <%= node['php_fpm']['mbstring']['substitute_character'] %>
 
 [mcrypt]
-mcrypt.algorithms_dir = #{node['php_fpm']['mcrypt']['algorithms_dir']}
-mcrypt.modes_dir = #{node['php_fpm']['mcrypt']['modes_dir']}
+mcrypt.algorithms_dir = <%= node['php_fpm']['mcrypt']['algorithms_dir'] %>
+mcrypt.modes_dir = <%= node['php_fpm']['mcrypt']['modes_dir'] %>
 
 [mssql]
-mssql.allow_persistent = #{node['php_fpm']['mssql']['allow_persistent']}
-mssql.batchsize = #{node['php_fpm']['mssql']['batchsize']}
-mssql.charset = #{node['php_fpm']['mssql']['charset']}
-mssql.compatability_mode = #{node['php_fpm']['mssql']['compatability_mode']}
-mssql.connect_timeout = #{node['php_fpm']['mssql']['connect_timeout']}
-mssql.datetimeconvert = #{node['php_fpm']['mssql']['datetimeconvert']}
-mssql.max_links = #{node['php_fpm']['mssql']['max_links']}
-mssql.max_persistent = #{node['php_fpm']['mssql']['max_persistent']}
-mssql.min_error_severity = #{node['php_fpm']['mssql']['min_error_severity']}
-mssql.min_message_severity = #{node['php_fpm']['mssql']['min_message_severity']}
-mssql.secure_connection = #{node['php_fpm']['mssql']['secure_connection']}
-mssql.textlimit = #{node['php_fpm']['mssql']['textlimit']}
-mssql.textsize = #{node['php_fpm']['mssql']['textsize']}
-mssql.timeout = #{node['php_fpm']['mssql']['timeout']}
+mssql.allow_persistent = <%= node['php_fpm']['mssql']['allow_persistent'] %>
+mssql.batchsize = <%= node['php_fpm']['mssql']['batchsize'] %>
+mssql.charset = <%= node['php_fpm']['mssql']['charset'] %>
+mssql.compatability_mode = <%= node['php_fpm']['mssql']['compatability_mode'] %>
+mssql.connect_timeout = <%= node['php_fpm']['mssql']['connect_timeout'] %>
+mssql.datetimeconvert = <%= node['php_fpm']['mssql']['datetimeconvert'] %>
+mssql.max_links = <%= node['php_fpm']['mssql']['max_links'] %>
+mssql.max_persistent = <%= node['php_fpm']['mssql']['max_persistent'] %>
+mssql.min_error_severity = <%= node['php_fpm']['mssql']['min_error_severity'] %>
+mssql.min_message_severity = <%= node['php_fpm']['mssql']['min_message_severity'] %>
+mssql.secure_connection = <%= node['php_fpm']['mssql']['secure_connection'] %>
+mssql.textlimit = <%= node['php_fpm']['mssql']['textlimit'] %>
+mssql.textsize = <%= node['php_fpm']['mssql']['textsize'] %>
+mssql.timeout = <%= node['php_fpm']['mssql']['timeout'] %>
 
 [mysql]
-mysql.allow_local_infile = #{node['php_fpm']['mysql']['allow_local_infile']}
-mysql.allow_persistent = #{node['php_fpm']['mysql'][allow_persistent']}
-mysql.cache_size = #{node['php_fpm']['mysql_cache_size']}
-mysql.connect_timeout = #{node['php_fpm']['mysql']['connect_timeout']}
-mysql.default_host = #{node['php_fpm']['mysql']['default_host']}
-mysql.default_password = #{node['php_fpm']['mysql']['default_password']}
-mysql.default_port = #{node['php_fpm']['mysql']['default_port']}
-mysql.default_socket = #{node['php_fpm']['mysql']['default_socket']}
-mysql.default_user = #{node['php_fpm']['mysql']['default_user']}
-mysql.max_links = #{node['php_fpm']['mysql']['mysql_max_links']}
-mysql.max_persistent = #{node['php_fpm']['mysql']['max_persistent']}
-mysql.trace_mode = #{node['php_fpm']['mysql']['connect_timeout']}
+mysql.allow_local_infile = <%= node['php_fpm']['mysql']['allow_local_infile'] %>
+mysql.allow_persistent = <%= node['php_fpm']['mysql']['allow_persistent'] %>
+mysql.cache_size = <%= node['php_fpm']['mysql_cache_size'] %>
+mysql.connect_timeout = <%= node['php_fpm']['mysql']['connect_timeout'] %>
+mysql.default_host = <%= node['php_fpm']['mysql']['default_host'] %>
+mysql.default_password = <%= node['php_fpm']['mysql']['default_password'] %>
+mysql.default_port = <%= node['php_fpm']['mysql']['default_port'] %>
+mysql.default_socket = <%= node['php_fpm']['mysql']['default_socket'] %>
+mysql.default_user = <%= node['php_fpm']['mysql']['default_user'] %>
+mysql.max_links = <%= node['php_fpm']['mysql']['mysql_max_links'] %>
+mysql.max_persistent = <%= node['php_fpm']['mysql']['max_persistent'] %>
+mysql.trace_mode = <%= node['php_fpm']['mysql']['connect_timeout'] %>
 
 [mysqli]
-mysqli.allow_local_infile = #{node['php_fpm']['mysqli']['allow_local_infile']}
-mysqli.allow_persistent = #{node['php_fpm']['mysqli']['allow_persistent']}
-mysqli.cache_size = #{node['php_fpm']['mysqli']['cache_size']}
-mysqli.default_host = #{node['php_fpm']['mysqli']['default_host']}
-mysqli.default_port = #{node['php_fpm']['mysqli']['default_port']}
-mysqli.default_pw = #{node['php_fpm']['mysqli']['default_pw']}
-mysqli.default_socket = #{node['php_fpm']['mysqli']['default_socket']}
-mysqli.default_user = #{node['php_fpm']['mysqli']['default_user']}
-mysqli.max_links = #{node['php_fpm']['mysqli']['max_links']}
-mysqli.max_persistent = #{node['php_fpm']['mysqli']['max_persistent']}
-mysqli.reconnect = #{node['php_fpm']['mysqli']['reconnect']}
+mysqli.allow_local_infile = <%= node['php_fpm']['mysqli']['allow_local_infile'] %>
+mysqli.allow_persistent = <%= node['php_fpm']['mysqli']['allow_persistent'] %>
+mysqli.cache_size = <%= node['php_fpm']['mysqli']['cache_size'] %>
+mysqli.default_host = <%= node['php_fpm']['mysqli']['default_host'] %>
+mysqli.default_port = <%= node['php_fpm']['mysqli']['default_port'] %>
+mysqli.default_pw = <%= node['php_fpm']['mysqli']['default_pw'] %>
+mysqli.default_socket = <%= node['php_fpm']['mysqli']['default_socket'] %>
+mysqli.default_user = <%= node['php_fpm']['mysqli']['default_user'] %>
+mysqli.max_links = <%= node['php_fpm']['mysqli']['max_links'] %>
+mysqli.max_persistent = <%= node['php_fpm']['mysqli']['max_persistent'] %>
+mysqli.reconnect = <%= node['php_fpm']['mysqli']['reconnect'] %>
 
 [mysqlnd]
-mysqlnd.collect_memory_statistics = #{node['php_fpm']['mysqlnd']['collect_memory_statistics']}
-mysqlnd.collect_statistics = #{node['php_fpm']['mysqlnd']['collect_statistics']}
-mysqlnd.net_cmd_buffer_size = #{node['php_fpm']['mysqlnd']['net_cmd_buffer_size']}
-mysqlnd.net_read_buffer_size = #{node['php_fpm']['mysqlnd']['net_read_buffer_size']}
+mysqlnd.collect_memory_statistics = <%= node['php_fpm']['mysqlnd']['collect_memory_statistics'] %>
+mysqlnd.collect_statistics = <%= node['php_fpm']['mysqlnd']['collect_statistics'] %>
+mysqlnd.net_cmd_buffer_size = <%= node['php_fpm']['mysqlnd']['net_cmd_buffer_size'] %>
+mysqlnd.net_read_buffer_size = <%= node['php_fpm']['mysqlnd']['net_read_buffer_size'] %>
 
 [oci8]
-oci8.connection_class = #{node['php_fpm']['oci8']['connection_class']}
-oci8.default_prefetch = #{node['php_fpm']['oci8']['default_prefetch']}
-oci8.events = #{node['php_fpm']['oci8']['events']}
-oci8.max_persistent = #{node['php_fpm']['oci8']['max_persistent']}
-oci8.old_oci_close_semantics = #{node['php_fpm']['oci8']['old_oci_close_semantics']}
-oci8.persistent_timeout = #{node['php_fpm']['oci8']['persistent_timeout']}
-oci8.privileged_connect = #{node['php_fpm']['oci8']['privileged_connect']}
-oci8.ping_interval = #{node['php_fpm']['oci8']['ping_interval']}
-oci8.statement_cache_size = #{node['php_fpm']['oci8']['statement_cache_size']}
+oci8.connection_class = <%= node['php_fpm']['oci8']['connection_class'] %>
+oci8.default_prefetch = <%= node['php_fpm']['oci8']['default_prefetch'] %>
+oci8.events = <%= node['php_fpm']['oci8']['events'] %>
+oci8.max_persistent = <%= node['php_fpm']['oci8']['max_persistent'] %>
+oci8.old_oci_close_semantics = <%= node['php_fpm']['oci8']['old_oci_close_semantics'] %>
+oci8.persistent_timeout = <%= node['php_fpm']['oci8']['persistent_timeout'] %>
+oci8.privileged_connect = <%= node['php_fpm']['oci8']['privileged_connect'] %>
+oci8.ping_interval = <%= node['php_fpm']['oci8']['ping_interval'] %>
+oci8.statement_cache_size = <%= node['php_fpm']['oci8']['statement_cache_size'] %>
 
 [odbc]
-odbc.allow_persistent = #{node['php_fpm']['odbc']['allow_persistent']}
-odbc.check_persistent = #{node['php_fpm']['odbc']['check_persistent']}
-odbc.defaultbinmode = #{node['php_fpm']['odbc']['defaultbinmode']}
-odbc.defaultlrl = #{node['php_fpm']['odbc']['defaultlrl']}
-odbc.default_cursortype = #{node['php_fpm']['odbc']['default_cursortype']}
-odbc.max_links = #{node['php_fpm']['odbc']['max_links']}
-odbc.max_persistent = #{node['php_fpm']['odbc']['max_persistent']}
+odbc.allow_persistent = <%= node['php_fpm']['odbc']['allow_persistent'] %>
+odbc.check_persistent = <%= node['php_fpm']['odbc']['check_persistent'] %>
+odbc.defaultbinmode = <%= node['php_fpm']['odbc']['defaultbinmode'] %>
+odbc.defaultlrl = <%= node['php_fpm']['odbc']['defaultlrl'] %>
+odbc.default_cursortype = <%= node['php_fpm']['odbc']['default_cursortype'] %>
+odbc.max_links = <%= node['php_fpm']['odbc']['max_links'] %>
+odbc.max_persistent = <%= node['php_fpm']['odbc']['max_persistent'] %>
 
 [pcre]
-pcre.backtrack_limit = #{node['php_fpm']['pcre']['backtrack_limit']}
-pcre.recursion_limit = #{node['php_fpm']['pcre']['recursion_limit']}
+pcre.backtrack_limit = <%= node['php_fpm']['pcre']['backtrack_limit'] %>
+pcre.recursion_limit = <%= node['php_fpm']['pcre']['recursion_limit'] %>
 
 [pdo_mysql]
-pdo_mysql.cache_size = #{node['php_fpm']['pdo_mysql']['cache_size']}
-pdo_mysql.default_socket= #{node['php_fpm']['pdo_mysql']['default_socket']}
+pdo_mysql.cache_size = <%= node['php_fpm']['pdo_mysql']['cache_size'] %>
+pdo_mysql.default_socket= <%= node['php_fpm']['pdo_mysql']['default_socket'] %>
 
 [pdo_odbc]
-pdo_odbc.connection_pooling = #{node['php_fpm']['pdo_odbc']['connection_pooling']}
-pdo_odbc.db2_instance_name = #{node['php_fpm']['pdo_odbc']['db2_instance_name']}
+pdo_odbc.connection_pooling = <%= node['php_fpm']['pdo_odbc']['connection_pooling'] %>
+pdo_odbc.db2_instance_name = <%= node['php_fpm']['pdo_odbc']['db2_instance_name'] %>
 
 [pgsql]
-pgsql.allow_persistent = #{node['php_fpm']['pgsql']['allow_persistent']}
-pgsql.auto_reset_persistent = #{node['php_fpm']['pgsql']['auto_reset_persistent']}
-pgsql.ignore_notice = #{node['php_fpm']['pgsql']['ignore_notice']}
-pgsql.log_notice = #{node['php_fpm']['pgsql']['log_notice']}
-pgsql.max_links = #{node['php_fpm']['pgsql']['max_links']}
-pgsql.max_persistent = #{node['php_fpm']['pgsql']['max_persistent']}
+pgsql.allow_persistent = <%= node['php_fpm']['pgsql']['allow_persistent'] %>
+pgsql.auto_reset_persistent = <%= node['php_fpm']['pgsql']['auto_reset_persistent'] %>
+pgsql.ignore_notice = <%= node['php_fpm']['pgsql']['ignore_notice'] %>
+pgsql.log_notice = <%= node['php_fpm']['pgsql']['log_notice'] %>
+pgsql.max_links = <%= node['php_fpm']['pgsql']['max_links'] %>
+pgsql.max_persistent = <%= node['php_fpm']['pgsql']['max_persistent'] %>
 
 [phar]
-phar.cache_list = #{node['php_fpm']['phar']['cache_list']}
-phar.readonly = #{node['php_fpm']['phar']['readonly']}
-phar.require_hash = #{node['php_fpm']['phar']['require_hash']}
+phar.cache_list = <%= node['php_fpm']['phar']['cache_list'] %>
+phar.readonly = <%= node['php_fpm']['phar']['readonly'] %>
+phar.require_hash = <%= node['php_fpm']['phar']['require_hash'] %>
 
 [session]
-session.auto_start = #{node['php_fpm']['session']['auto_start']}
-session.bug_compat_42 = #{node['php_fpm']['session']['bug_compat_42']}
-session.bug_compat_warn = #{node['php_fpm']['session']['bug_compat_warn']}
-session.cache_expire = #{node['php_fpm']['session']['cache_expire']}
-session.cache_limiter = #{node['php_fpm']['session']['cache_limiter']}
-session.cookie_domain = #{node['php_fpm']['session']['cookie_domain']}
-session.cookie_httponly = #{node['php_fpm']['session']['cookie_httponly']}
-session.cookie_lifetime = #{node['php_fpm']['session']['cookie_lifetime']}
-session.cookie_path = #{node['php_fpm']['session']['cookie_path']}
-session.cookie_secure = #{node['php_fpm']['session']['cookie_secure']}
-session.entropy_file = #{node['php_fpm']['session']['entropy_file']}
-session.entropy_length = #{node['php_fpm']['session']['entropy_length']}
-session.gc_divisor = #{node['php_fpm']['session']['gc_divisor']}
-session.gc_maxlifetime = #{node['php_fpm']['session']['gc_maxlifetime']}
-session.gc_probability = #{node['php_fpm']['session']['gc_probability']}
-session.hash_bits_per_character = #{node['php_fpm']['session']['hash_bits_per_character']}
-session.hash_function = #{node['php_fpm']['session']['hash_function']}
-session.name = #{node['php_fpm']['session']['name']}
-session.referer_check = #{node['php_fpm']['session']['referer_check']}
-session.save_handler = #{node['php_fpm']['session']['save_handler']}
-session.save_path = #{node['php_fpm']['session']['save_path']}
-session.serialize_handler = #{node['php_fpm']['session']['serialize_handler']}
-session.use_cookies = #{node['php_fpm']['session']['use_cookies']}
-session.use_only_cookies = #{node['php_fpm']['session']['use_only_cookies']}
-session.use_trans_sid = #{node['php_fpm']['session']['use_trans_sid']}
+session.auto_start = <%= node['php_fpm']['session']['auto_start'] %>
+session.bug_compat_42 = <%= node['php_fpm']['session']['bug_compat_42'] %>
+session.bug_compat_warn = <%= node['php_fpm']['session']['bug_compat_warn'] %>
+session.cache_expire = <%= node['php_fpm']['session']['cache_expire'] %>
+session.cache_limiter = <%= node['php_fpm']['session']['cache_limiter'] %>
+session.cookie_domain = <%= node['php_fpm']['session']['cookie_domain'] %>
+session.cookie_httponly = <%= node['php_fpm']['session']['cookie_httponly'] %>
+session.cookie_lifetime = <%= node['php_fpm']['session']['cookie_lifetime'] %>
+session.cookie_path = <%= node['php_fpm']['session']['cookie_path'] %>
+session.cookie_secure = <%= node['php_fpm']['session']['cookie_secure'] %>
+session.entropy_file = <%= node['php_fpm']['session']['entropy_file'] %>
+session.entropy_length = <%= node['php_fpm']['session']['entropy_length'] %>
+session.gc_divisor = <%= node['php_fpm']['session']['gc_divisor'] %>
+session.gc_maxlifetime = <%= node['php_fpm']['session']['gc_maxlifetime'] %>
+session.gc_probability = <%= node['php_fpm']['session']['gc_probability'] %>
+session.hash_bits_per_character = <%= node['php_fpm']['session']['hash_bits_per_character'] %>
+session.hash_function = <%= node['php_fpm']['session']['hash_function'] %>
+session.name = <%= node['php_fpm']['session']['name'] %>
+session.referer_check = <%= node['php_fpm']['session']['referer_check'] %>
+session.save_handler = <%= node['php_fpm']['session']['save_handler'] %>
+session.save_path = <%= node['php_fpm']['session']['save_path'] %>
+session.serialize_handler = <%= node['php_fpm']['session']['serialize_handler'] %>
+session.use_cookies = <%= node['php_fpm']['session']['use_cookies'] %>
+session.use_only_cookies = <%= node['php_fpm']['session']['use_only_cookies'] %>
+session.use_trans_sid = <%= node['php_fpm']['session']['use_trans_sid'] %>
 
 [soap]
-soap.wsdl_cache_dir = #{node['php_fpm']['soap']['wsdl_cache_dir']}
-soap.wsdl_cache_enabled = #{node['php_fpm']['soap']['wsdl_cache_enabled']}
-soap.wsdl_cache_limit = #{node['php_fpm']['soap']['wsdl_cache_limit']}
-soap.wsdl_cache_ttl = #{node['php_fpm']['soap']['wsdl_cache_ttl']}
+soap.wsdl_cache_dir = <%= node['php_fpm']['soap']['wsdl_cache_dir'] %>
+soap.wsdl_cache_enabled = <%= node['php_fpm']['soap']['wsdl_cache_enabled'] %>
+soap.wsdl_cache_limit = <%= node['php_fpm']['soap']['wsdl_cache_limit'] %>
+soap.wsdl_cache_ttl = <%= node['php_fpm']['soap']['wsdl_cache_ttl'] %>
 
 [sql]
-sql.safe_mode = #{node['php_fpm']['sql']['safe_mode']}
+sql.safe_mode = <%= node['php_fpm']['sql']['safe_mode'] %>
 
 [sqlite]
-sqlite.assoc_case = #{node['php_fpm']['sqlite']['assoc_case']}
+sqlite.assoc_case = <%= node['php_fpm']['sqlite']['assoc_case'] %>
 
 [sqlite3]
-sqlite3.extension_dir = #{node['php_fpm']['sqlite3']['extension_dir']}
+sqlite3.extension_dir = <%= node['php_fpm']['sqlite3']['extension_dir'] %>
 
 [sybct]
-sybct.allow_persistent = #{node['php_fpm']['sybct']['allow_persistent']}
-sybct.deadlock_retry_count = #{node['php_fpm']['sybct']['deadlock_retry_count']}
-sybct.hostname= #{node['php_fpm']['sybct']['hostname']}
-sybct.login_timeout = #{node['php_fpm']['sybct']['login_timeout']}
-sybct.max_links = #{node['php_fpm']['sybct']['max_links']}
-sybct.max_persistent = #{node['php_fpm']['sybct']['max_persistent']}
-sybct.min_client_severity = #{node['php_fpm']['sybct']['min_client_severity']}
-sybct.min_server_severity = #{node['php_fpm']['sybct']['min_server_severity']}
-sybct.packet_size = #{node['php_fpm']['sybct']['packet_size']}
-sybct.timeout = #{node['php_fpm']['sybct']['timeout']}
+sybct.allow_persistent = <%= node['php_fpm']['sybct']['allow_persistent'] %>
+sybct.deadlock_retry_count = <%= node['php_fpm']['sybct']['deadlock_retry_count'] %>
+sybct.hostname= <%= node['php_fpm']['sybct']['hostname'] %>
+sybct.login_timeout = <%= node['php_fpm']['sybct']['login_timeout'] %>
+sybct.max_links = <%= node['php_fpm']['sybct']['max_links'] %>
+sybct.max_persistent = <%= node['php_fpm']['sybct']['max_persistent'] %>
+sybct.min_client_severity = <%= node['php_fpm']['sybct']['min_client_severity'] %>
+sybct.min_server_severity = <%= node['php_fpm']['sybct']['min_server_severity'] %>
+sybct.packet_size = <%= node['php_fpm']['sybct']['packet_size'] %>
+sybct.timeout = <%= node['php_fpm']['sybct']['timeout'] %>
 
 [sysvshm]
-sysvshm.init_mem = #{node['php_fpm']['sysvshm']['init_mem']}
+sysvshm.init_mem = <%= node['php_fpm']['sysvshm']['init_mem'] %>
 
 [tidy]
-tidy.clean_output = #{node['php_fpm']['tidy']['clean_output']}
-tidy.default_config = #{node['php_fpm']['tidy']['default_config']}
+tidy.clean_output = <%= node['php_fpm']['tidy']['clean_output'] %>
+tidy.default_config = <%= node['php_fpm']['tidy']['default_config'] %>
 
 [url_rewriter]
-url_rewriter.tags = #{node['php_fpm']['url_rewriter']['tags']}
+url_rewriter.tags = <%= node['php_fpm']['url_rewriter']['tags'] %>
 
 [user_ini]
-user_ini.cache_ttl = #{node['php_fpm']['user_ini_cache_ttl']}
-user_ini.filename = #{node['php_fpm']['user_ini_filename']}
+user_ini.cache_ttl = <%= node['php_fpm']['user_ini_cache_ttl'] %>
+user_ini.filename = <%= node['php_fpm']['user_ini_filename'] %>
 
 [zlib]
-zlib.output_compression = #{node['php_fpm']['zlib_output_compression']}
-zlib.output_compression_level = #{node['php_fpm']['zlib_output_compression_level']}
-zlib.output_handler = #{node['php_fpm']['zlib_output_handler']}
+zlib.output_compression = <%= node['php_fpm']['zlib_output_compression'] %>
+zlib.output_compression_level = <%= node['php_fpm']['zlib_output_compression_level'] %>
+zlib.output_handler = <%= node['php_fpm']['zlib_output_handler'] %>
 
 <% node['php']['directives'].each do |directive, value| -%>
 <%= "#{directive}=\"#{value}\"" %>

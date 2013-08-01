@@ -25,10 +25,3 @@ service node['php_fpm']['service'] do
     supports :status => true, :restart => true, :reload => true
     action [ :enable, :start ]
 end
-
-directory "/etc/php5/conf.d" do
-    action :create
-    mode 00755
-    owner "root"
-    group "root"
-end

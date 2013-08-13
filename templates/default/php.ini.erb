@@ -32,7 +32,7 @@ error_log = <%= node['php_fpm']['error_log'] %>
 error_prepend_string = <%= node['php_fpm']['error_prepend_string'] %>
 error_reporting = <%= node['php_fpm']['error_reporting'] %>
 expose_php = <%= node['php_fpm']['expose_php'] %>
-extension_dir = "<%= node['php_fpm']['extension_dir'] %>"
+;extension_dir = "<%= node['php_fpm']['extension_dir'] %>"
 file_uploads = <%= node['php_fpm']['file_uploads'] %>
 from = <%= node['php_fpm']['from'] %>
 html_errors = <%= node['php_fpm']['html_errors'] %>
@@ -223,7 +223,7 @@ mysql.default_password = <%= node['php_fpm']['mysql']['default_password'] %>
 mysql.default_port = <%= node['php_fpm']['mysql']['default_port'] %>
 mysql.default_socket = <%= node['php_fpm']['mysql']['default_socket'] %>
 mysql.default_user = <%= node['php_fpm']['mysql']['default_user'] %>
-mysql.max_links = <%= node['php_fpm']['mysql']['mysql_max_links'] %>
+mysql.max_links = <%= node['php_fpm']['mysql']['max_links'] %>
 mysql.max_persistent = <%= node['php_fpm']['mysql']['max_persistent'] %>
 mysql.trace_mode = <%= node['php_fpm']['mysql']['connect_timeout'] %>
 

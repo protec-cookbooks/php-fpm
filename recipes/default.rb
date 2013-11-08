@@ -22,7 +22,7 @@ template "#{node['php_fpm']['conf_dir']}/php.ini" do
 end
 
 service node['php_fpm']['service'] do
-    case node ['platform']
+    case node['platform']
     when 'ubuntu'
       if node['platform_version'].to_f >= 13.10
         provider Chef::Provider::Service::Upstart

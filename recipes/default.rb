@@ -21,6 +21,13 @@ template "#{node['php_fpm']['conf_dir']}/php.ini" do
   mode "0644"
 end
 
+template "#{node['php_fpm']['conf_dir']}/pool.d/www.conf" do
+  source "www.conf.erb"
+  owner "root"
+  group "root"
+  mode "0644"
+end
+
 service node['php_fpm']['service'] do
     case node['platform']
     when 'ubuntu'

@@ -1,0 +1,36 @@
+; Automatically created with chef for <%= node['fqdn'] %>
+; DO NOT EDIT
+
+[www]
+access.format = <%= node['php_fpm']['pool']['access_format'] %>
+access.log = <%= node['php_fpm']['pool']['access_log'] %>
+catch_workers_output = <%= node['php_fpm']['pool']['catch_workers_output'] %>
+chdir = <%= node['php_fpm']['pool']['chdir'] %>
+chroot = <%= node['php_fpm']['pool']['chroot'] %>
+clear_env = <%= node['php_fpm']['pool']['clear_env'] %>
+group = <%= node['php_fpm']['pool']['group'] %>
+listen = <%= node['php_fpm']['pool']['listen'] %>
+listen.allowed_clients = <%= node['php_fpm']['pool']['listen_allowed_clients'] %>
+listen.backlog = <%= node['php_fpm']['pool']['listen_backlog'] %>
+listen.group = <%= node['php_fpm']['pool']['listen_group'] %>
+listen.mode = <%= node['php_fpm']['pool']['listen_mode'] %>
+listen.owner = <%= node['php_fpm']['pool']['listen_owner'] %>
+ping.path = <%= node['php_fpm']['pool']['ping_path'] %>
+ping.response = <%= node['php_fpm']['pool']['ping_response'] %>
+pm = <%= node['php_fpm']['pool']['pm'] %>
+pm.max_children = <%= node['php_fpm']['pool']['pm_max_children'] %>
+pm.max_requests = <%= node['php_fpm']['pool']['pm_max_requests'] %>
+pm.max_spare_servers = <%= node['php_fpm']['pool']['pm_max_spare_servers'] %>
+pm.min_spare_servers = <%= node['php_fpm']['pool']['pm_min_spare_servers'] %>
+pm.process_idle_timeout = <%= node['php_fpm']['pool']['pm_process_idle_timeout'] %>
+pm.start_servers = <%= node['php_fpm']['pool']['pm_start_servers'] %>
+pm.status_path = <%= node['php_fpm']['pool']['pm_status_path'] %>
+prefix = <%= node['php_fpm']['pool']['prefix'] %>
+process.priority = <%= node['php_fpm']['pool']['process_priority'] %>
+request_slowlog_timeout = <%= node['php_fpm']['pool']['request_slowlog_timeout'] %>
+request_terminate_timeout = <%= node['php_fpm']['pool']['request_terminate_timeout'] %>
+rlimit_core = <%= node['php_fpm']['pool']['rlimit_core'] %>
+rlimit_files = <%= node['php_fpm']['pool']['rlimit_files'] %>
+security.limit_extensions = <%= node['php_fpm']['pool']['security_limit_extensions'] %>
+slowlog = <%= node['php_fpm']['pool']['slowlog'] %>
+user = <%= node['php_fpm']['pool']['user'] %>

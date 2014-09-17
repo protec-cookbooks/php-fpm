@@ -4,7 +4,7 @@ maintainer_email "dev@protecinnovations.co.uk"
 license          "All rights reserved"
 description      "Installs/Configures php-fpm"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.0.2"
+version          "0.0.3"
 
 %w{ debian ubuntu mint redhat centos amazon }.each do |os|
     supports os

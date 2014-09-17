@@ -28,6 +28,18 @@ template "#{node['php_fpm']['conf_dir']}/pool.d/www.conf" do
   mode "0644"
 end
 
+case node['platform']
+when 'ubuntu'
+  if node['platform_version'].to_f >= 13.10
+    coobook_file '/etc/init/php5-fpm.conf' do
+      source 'init.conf'
+      mode   '0644'
+      owner  'root'
+      group  'root'
+    end
+  end
+end
+
 service node['php_fpm']['service'] do
     case node['platform']
     when 'ubuntu'
